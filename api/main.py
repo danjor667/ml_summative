@@ -35,8 +35,7 @@ def predict(data: InputData):
 
 
 if __name__ == "__main__":
-    host = "127.0.0.1"
-    port = 8080
-    uvicorn.run(app, host=host, port=port)
+
+    uvicorn.run("main:app", host="0.0.0.0", port=1000, reload=true)
 
 
