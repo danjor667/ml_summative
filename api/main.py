@@ -32,7 +32,7 @@ def predict(data: InputData):
 
     variables = ["pregnancies",
                "glucose",
-               "Bloodpressure"
+               "BloodPressure"
                "SkinThickness",
                "Insulin",
                "BMI",
