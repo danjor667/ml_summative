@@ -30,14 +30,14 @@ class InputData(BaseModel):
 @app.post("/predict/")
 def predict(data: InputData):
 
-    variables = ["pregnancies"
-               "glucose"
+    variables = ["pregnancies",
+               "glucose",
                "Bloodpressure"
-               "SkinThickness"
-               "Insulin"
-               "BMI"
-               "DiabetesPedigreeFunction"
-               "Age"
+               "SkinThickness",
+               "Insulin",
+               "BMI",
+               "DiabetesPedigreeFunction",
+               "Age",
                ]
 
     features  = [[data.Pregnancies, data.Glucose, data.BloodPressure, data.SkinThickness, data.Insulin, data.BMI,
